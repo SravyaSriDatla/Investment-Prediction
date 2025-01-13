@@ -36,35 +36,30 @@ import statsmodels.api as sm
 X_opt = X[:,[0,1,2,3,4,5]]
 
 #Ordinary Leat Squares
-# what is rfe Recursive feature elemination
 regressor_OLS = sm.OLS(endog=y, exog=X_opt).fit()
 print(regressor_OLS.summary())
 
 X_opt = X[:,[0,1,2,3,5]]
 
 #Ordinary Leat Squares
-# what is rfe Recursive feature elemination
 regressor_OLS = sm.OLS(endog=y, exog=X_opt).fit()
 print(regressor_OLS.summary())
 
 X_opt = X[:,[0,1,2,3]]
 
 #Ordinary Leat Squares
-# what is rfe Recursive feature elemination
 regressor_OLS = sm.OLS(endog=y, exog=X_opt).fit()
 print(regressor_OLS.summary())
 
 X_opt = X[:,[0,1,3]]
 
 #Ordinary Leat Squares
-# what is rfe Recursive feature elemination
 regressor_OLS = sm.OLS(endog=y, exog=X_opt).fit()
 print(regressor_OLS.summary())
 
 X_opt = X[:,[0,1]]
 
 #Ordinary Leat Squares
-# what is rfe Recursive feature elemination
 regressor_OLS = sm.OLS(endog=y, exog=X_opt).fit()
 print(regressor_OLS.summary())
 
